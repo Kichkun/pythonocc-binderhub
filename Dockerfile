@@ -8,8 +8,8 @@ USER root
 RUN apt-get update
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y build-essential
-RUN apt-get install gfortran
-RUN apt-get install libstdc++6
+RUN apt-get install -y gfortran
+RUN apt-get install -y libstdc++6
 
 RUN conda install -c conda-forge mshr
 
