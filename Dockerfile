@@ -5,7 +5,6 @@ MAINTAINER Thomas Paviot <tpaviot@gmail.com>
 
 USER root
 
-RUN conda install matplotlib
 RUN conda install -c conda-forge fenics
 RUN conda install -c conda-forge mshr
 
