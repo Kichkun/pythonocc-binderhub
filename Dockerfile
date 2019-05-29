@@ -5,14 +5,13 @@ MAINTAINER Thomas Paviot <tpaviot@gmail.com>
 
 USER root
 
-RUN conda install -c conda-forge fenics
+RUN apt-get install software-properties-common
+RUN add-apt-repository ppa:fenics-packages/fenics
+RUN apt-get update
+RUN apt-get install --no-install-recommends fenics
+
 RUN conda install -c conda-forge mshr
 
-WORKDIR /opt/build
-RUN git clone https://github.com/spatialaudio/computational_acoustics.git
-
-####################
-# back to user mode #
-#####################
 USER jovyan
 WORKDIR /home/jovyan/work
+RUN git clone https://github.com/spatialaudio/computational_acoustics.git
