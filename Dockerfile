@@ -7,10 +7,9 @@ USER root
 
 RUN apt-get update
 RUN apt-get install -y software-properties-common
-RUN apt-get install -y gfortran
 
 RUN conda install -c conda-forge mshr
-RUN conda install -c conda-forge fenics
+Run conda install -c libgfortran
 
 USER jovyan
 WORKDIR /home/jovyan/work
