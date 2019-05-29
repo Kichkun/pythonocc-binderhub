@@ -7,9 +7,6 @@ USER root
 
 RUN apt-get update
 RUN apt-get install -y software-properties-common
-RUN add-apt-repository ppa:fenics-packages/fenics
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends fenics
 
 RUN conda install -c conda-forge mshr
 
