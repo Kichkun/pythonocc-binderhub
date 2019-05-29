@@ -1,5 +1,5 @@
 # trigger build
-FROM fenicsproject/stable:latest
+FROM jupyter/scipy-notebook:61d8aaedaeaf
 
 MAINTAINER Thomas Paviot <tpaviot@gmail.com>
 
