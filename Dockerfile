@@ -7,10 +7,11 @@ USER root
 
 RUN apt-get update
 RUN apt-get install -y software-properties-common
+RUN apt-get install -y build-essential
+RUN apt-get install gfortran
+RUN apt-get install libstdc++6
 
-#RUN conda install -c conda-forge mshr
-RUN conda install -c conda-forge fenics
-RUN conda install -c libgfortran
+RUN conda install -c conda-forge mshr
 
 USER jovyan
 WORKDIR /home/jovyan/work
