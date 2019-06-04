@@ -6,7 +6,7 @@ MAINTAINER Thomas Paviot <tpaviot@gmail.com>
 USER root
 
 RUN apt-get update
-RUN apt-get dist-upgrade
+RUN apt-get -y dist-upgrade
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y build-essential
 
