@@ -8,7 +8,7 @@ USER root
 RUN apt-get update
 RUN apt-get -y dist-upgrade
 RUN apt-get install -y software-properties-common
-RUN apt-get install -y build-essential
+RUN apt-get install -y build-essential gfortran
 
 RUN conda update -n base conda
 RUN conda install -c conda-forge mshr
