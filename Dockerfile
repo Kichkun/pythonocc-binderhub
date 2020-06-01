@@ -85,6 +85,11 @@ WORKDIR /opt/build/pythonocc-demos
 RUN cp -r /opt/build/pythonocc-demos/assets /home/jovyan/work
 RUN cp -r /opt/build/pythonocc-demos/jupyter_notebooks /home/jovyan/work
 
+WORKDIR /opt/build/
+RUN git clone https://github.com/Kichkun/pythonocc-binderhub
+WORKDIR /opt/build/pythonocc-binderhub
+RUN cp -r /opt/build/pythonocc-binderhub/examples /home/jovyan/work
+
 #############
 # pythreejs #
 #############
