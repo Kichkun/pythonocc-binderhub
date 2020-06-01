@@ -1,3 +1,3 @@
 Just press the button below
 
-[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/tpaviot/pythonocc-binderhub/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Kichkun/pythonocc-binderhub.git/master)
