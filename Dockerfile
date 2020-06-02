@@ -128,7 +128,7 @@ RUN make -j3 && make install
 
 ################
 # IfcOpenShell #
-################
+################ 
 WORKDIR /opt/build
 RUN git clone https://github.com/tpaviot/IfcOpenShell
 WORKDIR /opt/build/IfcOpenShell
