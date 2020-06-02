@@ -89,6 +89,7 @@ WORKDIR /opt/build/
 RUN git clone https://github.com/Kichkun/pythonocc-binderhub
 WORKDIR /opt/build/pythonocc-binderhub
 RUN cp -r /opt/build/pythonocc-binderhub/examples /home/jovyan/work
+RUN cp -r /opt/build/pythonocc-binderhub/examples/details /home/jovyan/work
 
 #############
 # pythreejs #
